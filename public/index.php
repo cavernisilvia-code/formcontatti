@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+declare(strict_types=1); //composer serve -> sito
 
 use App\App;
 use App\Http\Request;
