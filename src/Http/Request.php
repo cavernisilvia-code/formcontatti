@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Http;
@@ -10,12 +11,13 @@ final class Request
      * @param array<string, mixed>  $post
      * @param array<string, mixed>  $server
      */
-    
+
     public function __construct(
         private readonly array $query,
         private readonly array $post,
         private readonly array $server
-    ) {}
+    ) {
+    }
 
     public static function fromGlobals(): self
     {
